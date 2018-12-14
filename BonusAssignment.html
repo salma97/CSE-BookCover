@@ -1,0 +1,233 @@
+<html>
+<head>
+<title> Book Cover </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+function myFunction() {
+
+	document.getElementById("booksubtitlex").textContent = document.getElementById("booksubtitle").value;
+	document.getElementById("booktitlex").textContent = document.getElementById("booktitle").value;
+	document.getElementById("authorx").textContent = document.getElementById("author").value;
+	document.getElementById("publisherx").textContent = document.getElementById("publisher").value;
+	document.getElementById("yearx").textContent = document.getElementById("year").value;
+	document.getElementById("Colorx").style.backgroundColor = document.getElementById("Color").value;
+	document.getElementById("booksubtitlex").style.color = document.getElementById("booksubtitlecolor").value;
+	document.getElementById("booktitlex").style.color = document.getElementById("booktitlecolor").value;	
+	document.getElementById("authorx").style.color = document.getElementById("authorcolor").value;
+	document.getElementById("publisherx").style.color = document.getElementById("publishercolor").value;
+	document.getElementById("yearx").style.color = document.getElementById("yearcolor").value;
+	document.getElementById("booktitlex").style.fontFamily = document.getElementById("booktitlefont").value;
+	document.getElementById("booksubtitlex").style.fontFamily = document.getElementById("booksubtitlefont").value;
+	document.getElementById("authorx").style.fontFamily = document.getElementById("authorfont").value;
+	document.getElementById("publisherx").style.fontFamily = document.getElementById("publisherfont").value;
+	document.getElementById("yearx").style.fontFamily = document.getElementById("yearfont").value;
+}
+</script>
+
+<style>
+.form-control
+{
+background-color: #bfecff;
+}
+.btn
+{
+background-color: #bfecff;
+color: black;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class = "container-fluid">
+<div class = "jumbotron" style ="background-color:transparent;">
+
+<div class="row">
+
+<div class="col-lg-5">
+<div class = "jumbotron" style ="background-color:transparent;">    
+<form class = "form-horizontal">
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Book title:</label>
+      <div class = "col-lg-6"><input type = "text"  id = "booktitle" class = "form-control" placeholder = "Enter book title"></div>	  
+	</div>
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Book title color:</label>
+      <div class = "col-lg-6"><input type = "color"  id = "booktitlecolor" class = "form-control"></div>	
+	</div>
+
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Book title font:</label>
+      <div class = "col-lg-6">
+	  <select id = "booktitlefont" class = "form-control">
+	  <option>Solomon</option>
+      <option>Forte</option>
+	  <option>Calibri</option>
+	  <option>Matura MT Script Capitals</option>
+	  <option>Berlin Sans FB</option>
+	  <option>Times New Roman</option>
+      <option>Arial</option>
+	  </select>
+	  </div>	
+	</div>	
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Book subtitle:</label>
+      <div class = "col-lg-6"><input type = "text"  id = "booksubtitle" class = "form-control" placeholder = "Enter book subtitle"></div>	
+	</div>
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Book subtitle color:</label>
+      <div class = "col-lg-6"><input type = "color"  id = "booksubtitlecolor" class = "form-control"></div>	
+	</div>
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Book subtitle font:</label>
+      <div class = "col-lg-6">
+	  <select id = "booksubtitlefont" class = "form-control">
+	  <option>Solomon</option>
+      <option>Forte</option>
+	  <option>Calibri</option>
+	  <option>Matura MT Script Capitals</option>
+	  <option>Berlin Sans FB</option>
+	  <option>Times New Roman</option>
+      <option>Arial</option>
+	  </select>
+	  </div>	
+	</div>	
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Author name:</label>
+      <div class = "col-lg-6"><input type = "text"  id = "author" class = "form-control" placeholder = "Enter author's name"></div>	
+	</div>
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Author name's color:</label>
+      <div class = "col-lg-6"><input type = "color"  id = "authorcolor" class = "form-control"></div>	
+	</div>	
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Author name's font:</label>
+      <div class = "col-lg-6">
+	  <select id = "authorfont" class = "form-control">
+	  <option>Solomon</option>
+      <option>Forte</option>
+	  <option>Calibri</option>
+	  <option>Matura MT Script Capitals</option>
+	  <option>Berlin Sans FB</option>
+	  <option>Times New Roman</option>
+      <option>Arial</option>
+	  </select>
+	  </div>	
+	</div>	
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Publisher:</label>
+      <div class = "col-lg-6"><input type = "text"  id = "publisher" class = "form-control" placeholder = "Enter Publisher's name"></div>	
+	</div>	
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Publisher's color:</label>
+      <div class = "col-lg-6"><input type = "color"  id = "publishercolor" class = "form-control"></div>	
+	</div>
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Publisher's font:</label>
+      <div class = "col-lg-6">
+	  <select id = "publisherfont" class = "form-control">
+	  <option>Solomon</option>
+      <option>Forte</option>
+	  <option>Calibri</option>
+	  <option>Matura MT Script Capitals</option>
+	  <option>Berlin Sans FB</option>
+	  <option>Times New Roman</option>
+      <option>Arial</option>
+	  </select>
+	  </div>	
+	</div>	
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Background color:</label>
+      <div class = "col-lg-6"><input type = "color"  id = "Color" class = "form-control"></div>	
+	</div>
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Year:</label>
+      <div class = "col-lg-6">
+	  <select id = "year" class = "form-control">
+	  <option>2018</option>
+      <option>2017</option>
+	  <option>2016</option>
+	  <option>2015</option>
+	  <option>2014</option>
+	  <option>2013</option>
+      <option>2012</option>
+	  <option>2011</option>
+	  <option>2010</option>
+	  <option>2009</option>
+	  <option>2008</option>
+      <option>2007</option>
+	  <option>2006</option>
+	  <option>2005</option>
+	  <option>2004</option>
+	  </select>
+	  </div>	
+	</div>
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Year's color:</label>
+      <div class = "col-lg-6"><input type = "color"  id = "yearcolor" class = "form-control"></div>	
+	</div>
+	
+	<div class = "form-group">
+	  <label class = "control-label col-lg-6" style = "font-family:Solomon; color:#0e5a7a">Year's font:</label>
+      <div class = "col-lg-6">
+	  <select id = "yearfont" class = "form-control">
+	  <option>Solomon</option>
+      <option>Forte</option>
+	  <option>Calibri</option>
+	  <option>Matura MT Script Capitals</option>
+	  <option>Berlin Sans FB</option>
+	  <option>Times New Roman</option>
+      <option>Arial</option>
+	  </select>
+	  </div>	
+	</div>	
+	
+</br>	
+</form>
+<h4 align = "center"><a href="#" class="btn btn-info btn-md" role="button" id="generate" onclick = "myFunction()">Submit</a></h4>	
+</div>
+</div>   
+
+<div class = "col-lg-2" style= "border-left:1px solid #0e5a7a; height:100%" align = "center"></div>
+  
+<div class="col-lg-5">
+<div class = "jumbotron" style ="background-color:transparent">
+<h2 style = "font-family:Solomon; color:#0e5a7a" align = "center">Book Cover</h2>
+</br>
+<div class = "container" style ="background-color:#bfecff; border:1px solid black" id = "Colorx">
+
+<h1 style = "font-family:Matura MT Script Capitals; color:#0e5a7a" align = "center" id = "booktitlex"> Book title </h1>
+<h3 style = "font-family:Matura MT Script Capitals; color:#0e5a7a;" align = "center" id = "booksubtitlex"> Book subtitle </h3>
+</br>
+</br>
+</br>
+<h4 align = "center" style="font-family:Berlin Sans FB">By:<span id = "authorx">Author</span></h4>
+</br>
+<h6 align = "center" style="font-family:Berlin Sans FB"><span id = "publisherx">Publisher</span><h6>
+<h6 align = "center" style="font-family:Berlin Sans FB"><span id = "yearx">Year</span></h6>
+</br>
+</div>
+  
+</div>
+</div>
+</div>
+
+</body>
